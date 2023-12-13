@@ -10,6 +10,8 @@ import pin from "../assets/icons/pin.png"
 import coin from "../assets/icons/coin.png"
 import taco from "../assets/icons/fajita.png"
 import star from "../assets/icons/star.png"
+import back from "../assets/icons/back.png"
+import share from "../assets/icons/share.png"
 
 export default{
     chinesse,
@@ -23,5 +25,7 @@ export default{
     pin,
     coin,
     taco,
-    star
+    star,
+    back,
+    share
 }

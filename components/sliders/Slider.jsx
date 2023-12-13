@@ -2,12 +2,19 @@ import React from 'react'
 import { View, Text, TouchableOpacity, Image } from 'react-native'
 import styles from './slider.style'
 import { icons, images } from '../../constants'
+import { useNavigation } from '@react-navigation/native';
 
 const Slider = ({ item }) => {
+  const navigation = useNavigation();
+
+  const handlePress = () => {
+    navigation.navigate('Detail');
+  };
+
   return (
     <TouchableOpacity style={styles.sliderElement}>
 
-      <TouchableOpacity style={styles.container} activeOpacity={1}>
+      <TouchableOpacity style={styles.container} activeOpacity={1} onPress={handlePress}>
         <View style={styles.imgShadow}>
           <Image source={item.image} resizeMode="cover" style={styles.sliderImg} />
         </View>
