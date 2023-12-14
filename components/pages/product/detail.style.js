@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         left: "5%",
         right: "5%",
         width: "90%",
-        height: "50%",
+        height: "55%",
         backgroundColor: "#FBFBFB",
         elevation: 10,
         shadowOffset: { width: 0, height: 2 },
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     sliderText:{
         color: COLORS.tertiare,
         fontWeight: "bold",
-        fontSize: 26
+        fontSize: 24
     },
     ratingElement:{
         flexDirection: "row",
@@ -74,8 +74,8 @@ const styles = StyleSheet.create({
         justifyContent: "flex-start"
     },
     icon:{
-        width: 20,
-        height: 20
+        width: 17,
+        height: 17
     },
     iconText:{
         paddingHorizontal: 3,
@@ -91,6 +91,25 @@ const styles = StyleSheet.create({
         alignSelf: "center",
         width: "85%",
         height: 1,
+    },
+    afterHorizontalLine: {
+        marginTop: 15,
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between"
+    },
+    element: {
+        gap: 7,
+        // width: "40%",
+        // margin: 10,
+        flexDirection: "row",
+        alignItems: "center",
+    },
+    text: {
+        color: "gray",
+        fontSize: 13,
+        flexDirection: "row",
+        alignSelf: "center"
     },
 })
 

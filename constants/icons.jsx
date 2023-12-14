@@ -12,6 +12,9 @@ import taco from "../assets/icons/fajita.png"
 import star from "../assets/icons/star.png"
 import back from "../assets/icons/back.png"
 import share from "../assets/icons/share.png"
+import hour from "../assets/icons/minute.png"
+import house from "../assets/icons/house-outline.png"
+import parkingarea from "../assets/icons/parking-area.png"
 
 export default{
     chinesse,
@@ -27,5 +30,8 @@ export default{
     taco,
     star,
     back,
-    share
+    share,
+    hour,
+    house,
+    parkingarea
 }
