@@ -111,6 +111,22 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignSelf: "center"
     },
+    recommandedContainer: {
+        height: "50%",
+        padding: 25,
+    },
+    recommandedElement:{
+        top: "20%",
+        position: "relative"
+    },
+    commentsElement:{
+        padding: 25,
+    },
+    recommandedText:{
+        marginBottom: "5%",
+        fontSize: 20,
+        fontWeight: "bold",
+    }
 })
 
 export default styles;

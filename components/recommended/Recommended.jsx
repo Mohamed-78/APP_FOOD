@@ -1,50 +1,27 @@
 import React from "react";
-import { FlatList, Image, Text, View } from "react-native";
+import { FlatList, Image, Text, View, TouchableOpacity } from "react-native";
 import { icons, images } from "../../constants";
+import styles from "./recommended.style";
 
-const Recommended = ({item}) => {
+export function Recommended({item}){
   return (
-    <TouchableOpacity style={styles.sliderElement}>
-
-      <TouchableOpacity style={styles.container} activeOpacity={1} onPress={handlePress}>
+    <View style={styles.sliderElement}>
+      <TouchableOpacity style={styles.container} activeOpacity={1}>
         <View style={styles.imgShadow}>
           <Image source={item.image} resizeMode="cover" style={styles.sliderImg} />
         </View>
 
-        <View style={styles.textContentCard}>
+        <View style={styles.textContent}>
           <Text style={styles.sliderText} numberOfLines={1}>
             {item.title}
           </Text>
-
-          <View style={styles.ratingElement}>
-              <Image source={icons.rating} resizeMode="cover" style={styles.ratingSize}/>
-              <Text style={styles.reviews}>5</Text>
-              <Text style={styles.totalReviews}>POe</Text>
-          </View>
-
-          <View style={styles.elementPosition}>
-              <View style={styles.iconWithText}>
-                <Image source={icons.spoonandfork} resizeMode="cover" style={styles.icon} />
-                <Text style={styles.iconText}>Dessert</Text>
-              </View>
-
-              <View style={styles.iconWithText}>
-                <Image source={icons.pin} resizeMode="cover" style={styles.icon} />
-                <Text style={styles.iconText}>1.6km</Text>
-              </View>
-
-              <View style={styles.iconWithText}>
-                <Image source={icons.coin} resizeMode="cover" style={styles.icon} />
-                <Text style={styles.iconText}>23/person</Text>
-              </View>
-          </View>
-
         </View>
-
+        <Text style={styles.sliderPrice}>
+          {item.price}
+        </Text>
       </TouchableOpacity>
-
-    </TouchableOpacity>
-  );
+    </View>
+  )
 };
 
 export default Recommended;
