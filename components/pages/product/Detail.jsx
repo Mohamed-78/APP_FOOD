@@ -14,8 +14,12 @@ import BackButton from "../../common/button/backbutton/BacKButton";
 import ShareButton from "../../common/button/sharebutton/ShareButtton";
 import Recommended from "../../recommended/Recommended";
 import Comments from "../../comments/Comments";
+import { useRouter } from "expo-router";
+import { useNavigation } from '@react-navigation/native';
 
 const Detail = () => {
+  const navigation = useNavigation();
+
   const DATA = [
     {
       id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
@@ -47,7 +51,7 @@ const Detail = () => {
         >
           <View style={styles.actionButton}>
             <View style={styles.buttonCercle}>
-              <BackButton />
+              <BackButton onClick={() => {navigation.goBack()}} />
             </View>
             <View style={styles.buttonCercle}>
               <ShareButton />

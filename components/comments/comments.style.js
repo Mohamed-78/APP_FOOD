@@ -19,6 +19,40 @@ const styles = StyleSheet.create({
         marginTop: "3%",
         fontSize: 20,
         fontWeight: "bold",
+    },
+    commentsContent:{
+        marginTop: "5%",
+    },
+    justifyPosition:{
+        flexDirection: "row",
+        justifyContent: "space-between"
+    },
+    userImage:{
+        width: 60,
+        height: 60
+    },
+    flexStartElement:{
+        flexDirection: "row",
+        justifyContent: "flex-start"
+    },
+    userNameAndRating:{
+        
+    },
+    userName:{
+        position: "relative",
+        top: "10%",
+        left: "20%",
+        fontSize: 17,
+        fontWeight: "bold"
+    },
+    dateComment:{
+        marginTop: "5%",
+    },
+    iconsSize:{
+        width: 90,
+        height: 90,
+        position: "absolute",
+        left: "58%"
     }
 });
 

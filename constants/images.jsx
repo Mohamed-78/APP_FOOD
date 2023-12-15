@@ -6,6 +6,7 @@ import background from "../assets/images/background.jpg"
 import bg from "../assets/images/bg.png"
 import product_1 from "../assets/images/product_1.png"
 import product_2 from "../assets/images/product_2.png"
+import user from "../assets/images/user.png"
 
 export default{
     firstslider,
@@ -15,5 +16,6 @@ export default{
     background,
     bg,
     product_1,
-    product_2
+    product_2,
+    user
 }
